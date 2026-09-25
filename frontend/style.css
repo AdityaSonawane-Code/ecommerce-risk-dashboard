@@ -1,0 +1,84 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  padding: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* GRID LAYOUT */
+.grid {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* CARDS */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* HEADINGS */
+.card h3 {
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+/* LISTS */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* TERMINAL LOG BOX */
+.terminal {
+  max-height: 250px;
+  overflow-y: auto;
+  font-family: monospace;
+  background: #f9fafb;
+}
+
+/* LOG LINES */
+#logs div {
+  padding: 6px;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+}
+
+/* COLORS FOR STATUS */
+li:nth-child(odd) {
+  background: #f8f9fa;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+}

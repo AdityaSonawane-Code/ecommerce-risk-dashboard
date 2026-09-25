@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">⚠️  E-Commerce Risk & Threat Monitoring Dashboard  ⚠️</h1>
+
+<div class="grid">
+
+    <div class="card">
+        <h3>📊 Attack Stats</h3>
+        <canvas id="barChart"></canvas>
+    </div>
+
+    <div class="card">
+        <h3>📈 Live Activity</h3>
+        <canvas id="lineChart"></canvas>
+    </div>
+
+</div>
+
+<div class="grid">
+
+    <div class="card">
+        <h3>🚨 Suspicious IPs</h3>
+        <ul id="suspicious"></ul>
+    </div>
+
+    <div class="card">
+        <h3>🤖 Bots</h3>
+        <ul id="bots"></ul>
+    </div>
+
+</div>
+
+<div class="card terminal">
+    <h3>💻 Live Logs</h3>
+    <div id="logs"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
